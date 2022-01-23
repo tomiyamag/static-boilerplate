@@ -2,7 +2,7 @@
 
 ## インストール
 
-### macOS
+### macOS/Linux
 
 - [nodenv](https://github.com/nodenv/nodenv)
 
