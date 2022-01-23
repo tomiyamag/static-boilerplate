@@ -1,0 +1,52 @@
+@use "../abstracts/" as *;
+
+.container {
+  position: relative;
+  max-width: 1480px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.clearfix {
+  &::after {
+    display: block;
+    clear: both;
+    content: "";
+  }
+}
+
+@include mq(medium, min, true) {
+  .sp-only {
+    display: none !important;
+  }
+}
+
+@include mq() {
+  .pc-only {
+    display: none !important;
+  }
+}
+
+.text-justify {
+  text-align: justify !important;
+  text-justify: inter-ideograph !important;
+}
+
+.text-hide {
+  /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+.invisible {
+  visibility: hidden !important;
+}
+
+.no-select {
+  user-select: none !important;
+}

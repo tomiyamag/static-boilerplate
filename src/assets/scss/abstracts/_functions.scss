@@ -1,0 +1,5 @@
+// Viewport Width
+@function vw($size, $viewport: 750) {
+  $rate: 100 / $viewport;
+  @return $rate * $size * 1vw;
+}
