@@ -11,8 +11,6 @@ module.exports = {
     sourceType: "module",
   },
   rules: {
-    "no-undef": "warn",
     "no-console": "warn",
-    "no-unused-vars": "warn",
   },
 };
