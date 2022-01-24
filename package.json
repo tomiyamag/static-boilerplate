@@ -16,7 +16,7 @@
     "watch:pug": "onchange -i \"src/**/*.pug\" -- npm run pug",
     "watch:ejs": "onchange -i \"src/**/*.ejs\" -- npm run ejs",
     "watch:images": "onchange -i \"src/assets/images/**/*.*\" -- npm run imagemin",
-    "watch:src": "onchange -i \"src/**/!(*.js|*.scss|*.pug|*.ejs)\" -e \"src/assets/images/*.*\" -- npm run copy",
+    "watch:copy": "onchange -i \"src/**/!(*.js|*.scss|*.pug|*.ejs)\" -e \"src/assets/images/*.*\" -- npm run copy",
     "serve": "browser-sync start -c bs-config.js",
     "styles": "run-s scss autoprefixer",
     "scss": "sass src/assets/scss/app.scss:dist/assets/css/app.css",
